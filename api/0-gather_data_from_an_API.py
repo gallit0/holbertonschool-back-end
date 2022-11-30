@@ -6,7 +6,7 @@ import json
 
 if __name__ == '__main__':
     todos = requests.get('https://jsonplaceholder.typicode.com/todos')
-    u = requests.get(f'https://jsonplaceholder.typicode.com/users/{argv[1]}')
+    u = requests.get('https://jsonplaceholder.typicode.com/users/' + argv[1])
     todos_dict = json.loads(todos.text)
     user_dict = json.loads(u.text)
     EMPLOYEE_NAME = user_dict['name']
