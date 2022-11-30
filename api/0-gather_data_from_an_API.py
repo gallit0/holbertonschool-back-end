@@ -20,6 +20,7 @@ if __name__ == '__main__':
                 NUMBER_OF_DONE_TASKS += 1
             TOTAL_NUMBER_OF_TASKS += 1
 
-    print(f"Employee {EMPLOYEE_NAME} is done with tasks", end='')
-    print(f'({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS})', end='\n\t ')
-    print('\n\t '.join(done))
+    print("Employee {} is done with tasks".format(EMPLOYEE_NAME), end='')
+    print('({}/'.format(NUMBER_OF_DONE_TASKS), end='')
+    print('{}):'.format(TOTAL_NUMBER_OF_TASKS), end='\n     ')
+    print('\n     '.join(done))
