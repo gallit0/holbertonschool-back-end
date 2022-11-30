@@ -16,7 +16,7 @@ if __name__ == '__main__':
         if int(i['userId']) == int(argv[1]):
             done.append([argv[1], uname, i['completed'], i['title']])
 
-    with open('2.csv', 'w') as csvfile:
+    with open(argv[1] + '.csv', 'w') as csvfile:
         sw = csv.writer(csvfile, delimiter=',', lineterminator='\r\n',
                         quoting=csv.QUOTE_ALL)
         for i in done:
