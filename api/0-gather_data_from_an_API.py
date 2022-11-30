@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """API"""
-from sys import argv
 import json
 import requests
+from sys import argv
 
 if __name__ == '__main__':
     todos = requests.get('https://jsonplaceholder.typicode.com/todos')
