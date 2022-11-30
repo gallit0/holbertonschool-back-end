@@ -22,5 +22,5 @@ if __name__ == '__main__':
 
     print("Employee {} is done with tasks".format(EMPLOYEE_NAME), end='')
     print('({}/'.format(NUMBER_OF_DONE_TASKS), end='')
-    print('{}):'.format(TOTAL_NUMBER_OF_TASKS), end='\n     ')
-    print('\n     '.join(done))
+    print('{}):'.format(TOTAL_NUMBER_OF_TASKS), end='\n\t ')
+    print('\n\t '.join(done))
