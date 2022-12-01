@@ -6,7 +6,7 @@ from sys import argv
 src = 'https://jsonplaceholder.typicode.com/'
 
 if __name__ == '__main__':
-    todos = requests.get(src + "todos?userId=" + argv[1]).json()
+    todos = requests.get(src + "todos/").json()
     u = requests.get(src + 'users/' + argv[1]).json()
     EMPLOYEE_NAME = u['name']
     NUMBER_OF_DONE_TASKS = 0
